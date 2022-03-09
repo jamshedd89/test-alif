@@ -1,0 +1,8 @@
+.comment-item:not(:last-child) {
+  padding: 5px 0 25px 0;
+  border-bottom: 1px solid #c5c5c5;
+}
+.comment-item:hover{
+  background-color: #ece9e9;
+  cursor: pointer;
+}

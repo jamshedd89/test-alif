@@ -8,6 +8,7 @@ import SearchBar from '../components/SearchBar';
 import UserBar from '../components/UserBar';
 import PostList from '../components/PostList';
 import PagePagination from '../components/PagePagination';
+import Loading from '../components/Loading';
 
 
 const Posts = observer(()=>{
@@ -27,7 +28,7 @@ const Posts = observer(()=>{
 
 
   if(loading){
-    return <h1>Loading...</h1>
+    return <Loading />
   }
 
 

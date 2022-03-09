@@ -1,0 +1,28 @@
+/* spinner ---------------------------------------- */
+.spinner-block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.spinner{
+  margin: 0 auto;
+}
+/*----------------------------------------------------*/
+.col-card-item{
+  margin-bottom: 15px;
+}
+/* View ------------------------------------------------*/
+.back-block{
+  margin: 15px 0;
+}
+.view-post{
+
+} 
+.view-post-title{
+
+}
+.view-post-body{
+
+}

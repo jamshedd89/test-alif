@@ -3,10 +3,12 @@ import { Container, Col, Row, Image, Card, Button } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
 import { fetchOnePost } from '../http/postApi';
 import Comment from '../components/Comment';
+import Loading from '../components/Loading';
+import ViewPost from '../components/ViewPost';
 
 
 
-function ViewPost(){
+function View(){
   const [ post, setPost ] = useState([]);
   const [ loading, setLoading ] = useState(true);
   const { id } = useParams();
@@ -20,14 +22,14 @@ function ViewPost(){
   }, []);
 
 
-  if(loading) return <h1>Loading...</h1>
+  if(loading) return <Loading />
 
   return (
     <Container>
-      <Comment post={post} />
+      <ViewPost post={post} />
     </Container>
   )
 }
 
 
-export default ViewPost;
+export default View;
