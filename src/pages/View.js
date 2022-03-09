@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Container, Col, Row, Image, Card, Button } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
 import { fetchOnePost } from '../http/postApi';
+import Comment from '../components/Comment';
 
 
 
@@ -23,8 +24,7 @@ function ViewPost(){
 
   return (
     <Container>
-      <div>{post.title}</div>
-      <div>{post.body}</div>
+      <Comment post={post} />
     </Container>
   )
 }

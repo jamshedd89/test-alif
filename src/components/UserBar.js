@@ -9,7 +9,10 @@ const UserBar = observer(()=>{
 
   return ( 
     <div>
-      <Badge bg="success">Список пользователя</Badge>
+      <h3>
+        <Badge bg="success">Список пользователя</Badge>
+      </h3>
+      
       <ListGroup>
         {post.users.map(user=>
           <ListGroup.Item 

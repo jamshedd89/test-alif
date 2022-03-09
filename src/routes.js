@@ -1,5 +1,5 @@
 import Posts from "./pages/Posts";
-import ViewPost from "./pages/ViewPost";
+import View from "./pages/View";
 
 import { POST_ROUTE, POST_VIEW } from './utils/consts';
 
@@ -12,6 +12,6 @@ export const routes = [
   },
   {
     path: POST_VIEW+'/:id',
-    Component: ViewPost
+    Component: View
   },
 ];

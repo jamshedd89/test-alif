@@ -4,7 +4,6 @@ import { observer } from 'mobx-react-lite';
 import { Context } from '..';
 import { fetchPosts } from '../http/postApi';
 import { fetchAllUser } from '../http/userApi';
-import { fetchAllComments } from '../http/commentApi';
 import SearchBar from '../components/SearchBar';
 import UserBar from '../components/UserBar';
 import PostList from '../components/PostList';
@@ -14,17 +13,6 @@ import PagePagination from '../components/PagePagination';
 const Posts = observer(()=>{
   const { post } = useContext(Context);
   const [ loading, setLoading ] = useState(true);
-
- 
-  // useEffect(()=>{
-  //   fetchAllUser().then(data=>post.setUsers(data));
-
-  //   fetchPosts(null, post.page, 20).then(data=>{
-  //     post.setPosts(data);
-  //     post.setTotalCount(data.length);
-  //   });
-  // }, );
-
 
 
   useEffect(()=>{
