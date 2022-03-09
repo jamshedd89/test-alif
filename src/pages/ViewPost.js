@@ -22,10 +22,10 @@ function ViewPost(){
   if(loading) return <h1>Loading...</h1>
 
   return (
-    <div>
+    <Container>
       <div>{post.title}</div>
       <div>{post.body}</div>
-    </div>
+    </Container>
   )
 }
 

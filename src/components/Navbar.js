@@ -10,7 +10,7 @@ const NavBar = ()=>{
   return (
     <Navbar bg="dark" variant='dark'>
       <Container>
-        <NavLink style={{color:"white"}} to={POST_ROUTE}>КупитДевайс</NavLink>
+        <NavLink style={{color:"white"}} to={POST_ROUTE}>Test</NavLink>
         
       </Container>
     </Navbar>

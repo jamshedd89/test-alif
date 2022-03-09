@@ -4,10 +4,8 @@ export default class PostStore{
   constructor(){
     this._posts = [];
     this._users = [];
-    this._comments = [];
     this._selectedPost = {};
     this._selectedUser = {};
-    this._selectedComment = {};
     this._page = 1;
     this._totalCount = 0;
     this._limit = 3;
@@ -22,10 +20,6 @@ export default class PostStore{
     this._users = users;
   }
 
-  setComments(comments){
-    this._comments = comments;
-  }
-
   setSelectedPost(post){
     this.setPage(1);
     this._selectedPost = post;
@@ -34,11 +28,6 @@ export default class PostStore{
   setSelectedUser(user){
     this.setPage(1);
     this._selectedUser = user;
-  }
-
-  setSelectedComments(comment){
-    this.setPage(1);
-    this._selectedComment = comment;
   }
 
 
@@ -58,9 +47,6 @@ export default class PostStore{
     return this._users;
   }
 
-  get comments(){
-    return this._comments;
-  }
 
   get selectedPost(){
     return this._selectedPost;
@@ -68,10 +54,6 @@ export default class PostStore{
 
   get selectedUser(){
     return this._selectedUser;
-  }
-
-  get selectedComment(){
-    return this._selectedComment;
   }
 
   get totalCount(){

@@ -8,11 +8,15 @@ import { Context } from '../index';
 const PagePagination = observer(()=>{
   const { post } = useContext(Context);
 
-  const pageCount = Math.ceil( (post.totalCount / post.limit) - 2);
+  const pageCount = Math.ceil(post.totalCount / post.limit);
   const pages = [];
 
-  for (let i = 0; i < pageCount; i++) {
-    pages.push(i + 1);
+  if(pageCount - post.limit === 1){
+    pages.push(1);
+  }else{
+    for (let i = 0; i < pageCount - post.limit + 1; i++) {
+      pages.push(i + 1);
+    }
   }
 
 
